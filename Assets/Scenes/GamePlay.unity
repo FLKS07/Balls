@@ -1455,7 +1455,7 @@ MonoBehaviour:
   currentBackgroundSprite: 0
   backgroundSprites:
   - {fileID: 21300000, guid: 9d80345b80409b141980fdefae397143, type: 3}
-  - {fileID: 21300000, guid: 74963e45a69f07746bba3137418f2fce, type: 3}
+  - {fileID: 21300000, guid: dbdf5a3f3a0c5394ebc056c884855407, type: 3}
 --- !u!82 &1117561772
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3934,6 +3934,14 @@ PrefabInstance:
     - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 91.70709
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 42.459743
       objectReference: {fileID: 0}
     - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_LocalPosition.x
