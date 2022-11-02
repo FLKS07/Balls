@@ -452,6 +452,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &374191268 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4933379595849484360, guid: 43da7b1410605644880e0abfa804b064, type: 3}
+  m_PrefabInstance: {fileID: 4933379596640019573}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &442412025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,6 +1451,11 @@ MonoBehaviour:
   textCoins: {fileID: 878320417}
   AudioS: {fileID: 0}
   isPaused: 0
+  backgroundSpriteRenderer: {fileID: 374191268}
+  currentBackgroundSprite: 0
+  backgroundSprites:
+  - {fileID: 21300000, guid: 9d80345b80409b141980fdefae397143, type: 3}
+  - {fileID: 21300000, guid: 74963e45a69f07746bba3137418f2fce, type: 3}
 --- !u!82 &1117561772
 AudioSource:
   m_ObjectHideFlags: 0

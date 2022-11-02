@@ -36,13 +36,16 @@ public class GameController : MonoBehaviour, IDataPersistence
     [Header("Pause")]
     public bool isPaused;
 
-
-
+    [Header("Background")]
+    public SpriteRenderer backgroundSpriteRenderer;
+    [SerializeField] int currentBackgroundSprite;
+    public Sprite[] backgroundSprites;
 
 
     public void LoadData(GameData data)
     {
         this.maxPoints = data.maxPoints;
+        this.currentBackgroundSprite = data.currentSprite;
     }
     public void Savedata(ref GameData data)
     {
@@ -56,6 +59,7 @@ public class GameController : MonoBehaviour, IDataPersistence
     void Start()
     {
         AudioS = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -68,6 +72,7 @@ public class GameController : MonoBehaviour, IDataPersistence
             maxPoints = Points;
         }
 
+        backgroundSpriteRenderer.sprite = backgroundSprites[currentBackgroundSprite];
 
         //Show high Score
         maxPointsText.text = "Best score off al time: " + maxPoints;
