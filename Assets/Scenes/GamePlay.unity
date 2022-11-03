@@ -3927,6 +3927,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4933379595849484360, guid: 43da7b1410605644880e0abfa804b064, type: 3}
+      propertyPath: m_Size.y
+      value: 0.313489
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933379595849484360, guid: 43da7b1410605644880e0abfa804b064, type: 3}
+      propertyPath: m_DrawMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4933379595849484361, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_Name
       value: BackGround
@@ -3937,19 +3945,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_LocalScale.x
-      value: 91.70709
+      value: 34.8
       objectReference: {fileID: 0}
     - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_LocalScale.y
-      value: 42.459743
+      value: 34.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 32.45128
       objectReference: {fileID: 0}
     - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2554
+      value: -0.0108
       objectReference: {fileID: 0}
     - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: 4933379595849484362, guid: 43da7b1410605644880e0abfa804b064, type: 3}
       propertyPath: m_LocalPosition.z

@@ -9,6 +9,6 @@ public class ShopBtn : MonoBehaviour
 
     public void Click()
     {
-        shopManager.currentSprite = skinID;
+        shopManager.changeSprite(skinID);
     }
 }
