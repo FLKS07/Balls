@@ -6,7 +6,7 @@ public class Background : MonoBehaviour
 {
     SpriteRenderer Sp;
     Vector2 offset;
-    [SerializeField] Vector2 movmentSpeed;
+    public Vector2 movmentSpeed;
     Material material;
 
 
@@ -14,7 +14,7 @@ public class Background : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         Sp = GetComponent<SpriteRenderer>();
         material = GetComponent<SpriteRenderer>().material;
     }

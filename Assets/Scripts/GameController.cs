@@ -40,6 +40,7 @@ public class GameController : MonoBehaviour, IDataPersistence
     public SpriteRenderer backgroundSpriteRenderer;
     [SerializeField] int currentBackgroundSprite;
     public Sprite[] backgroundSprites;
+    public Background backgroundShader;
 
 
     public void LoadData(GameData data)
@@ -59,7 +60,7 @@ public class GameController : MonoBehaviour, IDataPersistence
     void Start()
     {
         AudioS = GetComponent<AudioSource>();
-        
+
     }
 
     // Update is called once per frame
@@ -73,7 +74,10 @@ public class GameController : MonoBehaviour, IDataPersistence
         }
 
         backgroundSpriteRenderer.sprite = backgroundSprites[currentBackgroundSprite];
-
+        if (currentBackgroundSprite == 1)
+        {
+            backgroundShader.movmentSpeed = new Vector2(0, 0);
+        }
         //Show high Score
         maxPointsText.text = "Best score off al time: " + maxPoints;
         //Show coin ammount

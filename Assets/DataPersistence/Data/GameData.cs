@@ -10,6 +10,7 @@ public class GameData{
     
     public bool ownBackground1;
     public bool ownBackground2;
+    public bool ownBackground3;
     
 
     public GameData(){
@@ -19,5 +20,7 @@ public class GameData{
         
         this.ownBackground1 = true; // <- This sould always be true, it's the default background
         this.ownBackground2 = false;
+        this.ownBackground3 = false;
+        
     }
 }
