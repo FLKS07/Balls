@@ -18,6 +18,7 @@ public class ShopManager : MonoBehaviour, IDataPersistence
     public bool ownBackground2;
     public bool ownBackground3;
 
+
     [Header("Buttons")]
     public TextMeshProUGUI button1;
     public TextMeshProUGUI button2;

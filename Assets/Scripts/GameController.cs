@@ -29,6 +29,11 @@ public class GameController : MonoBehaviour, IDataPersistence
     public int Coins;
     public TextMeshProUGUI textCoins;
 
+    [Header("Balls sprites")]
+    public Sprite[] ballNormal;
+    public Sprite[] ballCursed;
+    public SpriteRenderer ballNormalRend;
+    public SpriteRenderer ballCursedRend;
 
     [Header("Sfx")]
     public AudioSource AudioS;
@@ -38,7 +43,7 @@ public class GameController : MonoBehaviour, IDataPersistence
 
     [Header("Background")]
     public SpriteRenderer backgroundSpriteRenderer;
-    [SerializeField] int currentBackgroundSprite;
+    public int currentBackgroundSprite;
     public Sprite[] backgroundSprites;
     public Background backgroundShader;
 
@@ -60,12 +65,19 @@ public class GameController : MonoBehaviour, IDataPersistence
     void Start()
     {
         AudioS = GetComponent<AudioSource>();
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (ballCursed[currentBackgroundSprite] != null)
+        {
+            Debug.Log(currentBackgroundSprite);
+            ballCursedRend.sprite = ballCursed[currentBackgroundSprite];
+            ballNormalRend.sprite = ballNormal[currentBackgroundSprite];
+        }
         PointsTxt.text = Points.ToString();
 
         if (maxPoints <= Points)

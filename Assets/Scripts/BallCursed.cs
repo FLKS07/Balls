@@ -11,7 +11,7 @@ public class BallCursed : MonoBehaviour
     public float camShakeTime;
 
 
-    public AudioClip pop;
+    public AudioClip[] ballCurseSound;
 
     // Update is called once per frame
     private void OnMouseDown()
@@ -20,7 +20,7 @@ public class BallCursed : MonoBehaviour
         {
             gameController.Lives -= 1;
             Destroy(gameObject);
-            gameController.AudioS.PlayOneShot(pop);
+            gameController.AudioS.PlayOneShot(ballCurseSound[gameController.currentBackgroundSprite]);
             camShake.startCameraShake(camShakeTime, camShakeMagnitude);
         }
     }

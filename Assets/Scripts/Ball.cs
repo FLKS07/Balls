@@ -6,7 +6,8 @@ public class Ball : MonoBehaviour
 {
     public GameController gameController;
 
-    public AudioClip pop;
+    public AudioClip[] ballSound;
+    
 
     // Start is called before the first frame update
     private void OnMouseDown()
@@ -15,7 +16,7 @@ public class Ball : MonoBehaviour
         {
             Destroy(gameObject);
             gameController.Points += 1;
-            gameController.AudioS.PlayOneShot(pop);
+            gameController.AudioS.PlayOneShot(ballSound[gameController.currentBackgroundSprite]);
         }
         else if(gameController.isGameOver == true && gameController.isPaused == true)
         {

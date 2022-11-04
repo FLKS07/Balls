@@ -370,6 +370,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6974479852960372333, guid: af35193ca99bd8c40b593ec6974a0318, type: 3}
   m_PrefabInstance: {fileID: 5368968092944490808}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &168931554 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4717177483514057133, guid: af35193ca99bd8c40b593ec6974a0318, type: 3}
+  m_PrefabInstance: {fileID: 5368968092944490808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &341089159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,6 +1200,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2126429699292006860, guid: fce6d4349e8724245a888c5e0ff266e7, type: 3}
   m_PrefabInstance: {fileID: 281891296339226215}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &982288499 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2014632546020427641, guid: fce6d4349e8724245a888c5e0ff266e7, type: 3}
+  m_PrefabInstance: {fileID: 281891296339226215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1037799333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1459,16 @@ MonoBehaviour:
   maxPointsText: {fileID: 769969449}
   Coins: 0
   textCoins: {fileID: 878320417}
+  ballNormal:
+  - {fileID: 21300000, guid: 0480118c6a34e1841a9a6269d0ee8250, type: 3}
+  - {fileID: 21300000, guid: b3fbd2a89274b1a4d9c347001088d999, type: 3}
+  - {fileID: 21300000, guid: 7598464321983fe48869d7778825a6d9, type: 3}
+  ballCursed:
+  - {fileID: 21300000, guid: 74963e45a69f07746bba3137418f2fce, type: 3}
+  - {fileID: 21300000, guid: 443f90ddc9b076d4391d3834588583bc, type: 3}
+  - {fileID: 21300000, guid: 976661653eb34944f8e6aed198ba4713, type: 3}
+  ballNormalRend: {fileID: 168931554}
+  ballCursedRend: {fileID: 982288499}
   AudioS: {fileID: 0}
   isPaused: 0
   backgroundSpriteRenderer: {fileID: 374191268}
@@ -3805,6 +3825,22 @@ PrefabInstance:
       propertyPath: camShakeMagnitude
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2225422443874537018, guid: fce6d4349e8724245a888c5e0ff266e7, type: 3}
+      propertyPath: ballCurseSound.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225422443874537018, guid: fce6d4349e8724245a888c5e0ff266e7, type: 3}
+      propertyPath: ballCurseSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 44035d2f64067124aadfcde0ec9e7414, type: 3}
+    - target: {fileID: 2225422443874537018, guid: fce6d4349e8724245a888c5e0ff266e7, type: 3}
+      propertyPath: ballCurseSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: afffecfeae13b4d4d98b1a10bca19b9f, type: 3}
+    - target: {fileID: 2225422443874537018, guid: fce6d4349e8724245a888c5e0ff266e7, type: 3}
+      propertyPath: ballCurseSound.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 44035d2f64067124aadfcde0ec9e7414, type: 3}
     - target: {fileID: 5226491150807338035, guid: fce6d4349e8724245a888c5e0ff266e7, type: 3}
       propertyPath: m_Name
       value: BolaCursed
@@ -4077,5 +4113,21 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 1117561771}
+    - target: {fileID: 9060582846373777192, guid: af35193ca99bd8c40b593ec6974a0318, type: 3}
+      propertyPath: ballSound.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060582846373777192, guid: af35193ca99bd8c40b593ec6974a0318, type: 3}
+      propertyPath: ballSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: a9614d30c2b9c4644931913597dda294, type: 3}
+    - target: {fileID: 9060582846373777192, guid: af35193ca99bd8c40b593ec6974a0318, type: 3}
+      propertyPath: ballSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 030c150249c677045940eda83f1261b5, type: 3}
+    - target: {fileID: 9060582846373777192, guid: af35193ca99bd8c40b593ec6974a0318, type: 3}
+      propertyPath: ballSound.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a9614d30c2b9c4644931913597dda294, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af35193ca99bd8c40b593ec6974a0318, type: 3}
