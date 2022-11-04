@@ -1,19 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShopManager : MonoBehaviour, IDataPersistence
 {
     
-
+    [Header("Coins")]
     public int currentCoins;
-    public int currentSprite;
-    public DataPersistenceManager dataManager;
+    public TextMeshProUGUI coinText;
+    
 
 
     [Header("OwnedBackgrounds")]
     public bool ownBackground1;
     public bool ownBackground2;
+
+    [Header("Buttons")]
+    public TextMeshProUGUI button1;
+    public TextMeshProUGUI button2;
+    
+    [Header("Misc")]
+    public int currentSprite;
+    public DataPersistenceManager dataManager;
+
+    private AudioSource audioSource;
 
     public void LoadData(GameData data)
     {
@@ -35,11 +46,18 @@ public class ShopManager : MonoBehaviour, IDataPersistence
         
     }
 
+    void Start(){
+        audioSource = GetComponent<AudioSource>();
+        UpdateButtons();
+    }
+
+    void Update(){
+        coinText.text = currentCoins.ToString();
+    }
+
+
     public void changeSprite(int sprite)
     {
-        
-        
-        
         if(sprite == 0){
             currentSprite = sprite;
             dataManager.SaveGame();
@@ -59,6 +77,22 @@ public class ShopManager : MonoBehaviour, IDataPersistence
             }
         }
 
+        UpdateButtons();
+
+    }
+
+    void UpdateButtons(){
+        if(ownBackground1 == true){
+            button1.text = "USE";
+            
+        }
+        if(ownBackground2 == true){
+            button2.text = "USE";
+        }
+    }
+
+    public void PlaySFX(AudioClip sfx){
+        audioSource.PlayOneShot(sfx);
     }
 
 }

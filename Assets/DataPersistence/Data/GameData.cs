@@ -17,7 +17,7 @@ public class GameData{
         this.coins = 0;
         this.currentSprite = 0;
         
-        this.ownBackground1 = true;
+        this.ownBackground1 = true; // <- This sould always be true, it's the default background
         this.ownBackground2 = false;
     }
 }
